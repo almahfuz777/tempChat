@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "849377235309",
+    "project_id": "tempchat0",
+    "storage_bucket": "tempchat0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:849377235309:android:c606e07b6e8443b10b4a64",
+        "android_client_info": {
+          "package_name": "com.example.tempchat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDC1C341JGpoLdVsYHiggQNFAib6rvM3z0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
