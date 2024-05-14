@@ -1,19 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/bg">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <!--    Heading (App Name)-->
+    <LinearLayout
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🗑️temp"
+            android:textSize="32dp"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chat💬"
+            android:textSize="32dp"
+            android:textColor="@color/green"
+            android:textStyle="bold"
+            android:gravity="center"/>
+    </LinearLayout>
+    <!--
+    <View
+        android:id="@+id/divider"
+        android:layout_width="150dp"
+        android:layout_height="3dp"
+        android:background="@drawable/divider"
+        android:layout_below="@id/heading"
+        android:layout_centerHorizontal="true"/>
+    -->
+    <!--    mainArea-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="50dp"
+        android:layout_below="@id/heading"
+        android:layout_marginTop="80dp">
+        <Button
+            android:id="@+id/selectJoinChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:text="JOIN CHAT ROOM"
+            android:onClick="selectJoinChat"/>
+        <Button
+            android:id="@+id/selectCreateChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="CREATE NEW CHAT ROOM"
+            android:onClick="selectCreateChat"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+        <EditText
+            android:id="@+id/roomID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Room ID"
+            android:inputType="text"
+            android:textColorHint="@color/hintColor"
+            android:textColor="@color/hintColor"
+            android:visibility="gone"/>
+        <EditText
+            android:id="@+id/roomPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:textColorHint="@color/hintColor"
+            android:textColor="@color/hintColor"
+            android:visibility="gone"/>
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="JOIN ROOM"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:onClick="submit"/>
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="🔙"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:onClick="backToMainMenu"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
