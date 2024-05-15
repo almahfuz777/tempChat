@@ -84,6 +84,15 @@
             android:textColorHint="@color/hintColor"
             android:textColor="@color/hintColor"
             android:visibility="gone"/>
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Join As"
+            android:inputType="text"
+            android:textColorHint="@color/hintColor"
+            android:textColor="@color/hintColor"
+            android:visibility="gone"/>
         <Button
             android:id="@+id/submitBtn"
             android:layout_width="wrap_content"
