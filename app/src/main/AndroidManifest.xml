@@ -25,6 +25,14 @@
             android:name=".ChatRoomActivity"
             android:exported="true">
         </activity>
+        <activity
+            android:name=".JoinChatRoomActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".CreateChatRoomActivity"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>

@@ -32,15 +32,7 @@
             android:textStyle="bold"
             android:gravity="center"/>
     </LinearLayout>
-    <!--
-    <View
-        android:id="@+id/divider"
-        android:layout_width="150dp"
-        android:layout_height="3dp"
-        android:background="@drawable/divider"
-        android:layout_below="@id/heading"
-        android:layout_centerHorizontal="true"/>
-    -->
+
     <!--    mainArea-->
     <LinearLayout
         android:layout_width="match_parent"
@@ -49,21 +41,46 @@
         android:layout_marginHorizontal="50dp"
         android:layout_below="@id/heading"
         android:layout_marginTop="80dp">
+
+        <EditText
+            android:id="@+id/roomID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Room ID"
+            android:inputType="text"
+            android:textColorHint="@color/hintColor"
+            android:textColor="@color/hintColor" />
+        <EditText
+            android:id="@+id/roomPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:textColorHint="@color/hintColor"
+            android:textColor="@color/hintColor"/>
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Join As"
+            android:inputType="text"
+            android:textColorHint="@color/hintColor"
+            android:textColor="@color/hintColor"/>
         <Button
-            android:id="@+id/selectJoinChat"
+            android:id="@+id/submitBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
             android:layout_gravity="center"
-            android:text="JOIN CHAT ROOM"
-            android:onClick="selectJoinChat"/>
+            android:text="JOIN ROOM"
+            android:layout_marginTop="10dp"
+            android:onClick="submit"/>
         <Button
-            android:id="@+id/selectCreateChat"
+            android:id="@+id/backBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="CREATE NEW CHAT ROOM"
-            android:onClick="selectCreateChat"/>
+            android:text="🔙"
+            android:onClick="backToMainMenu"/>
     </LinearLayout>
 
 
