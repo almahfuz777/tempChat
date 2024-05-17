@@ -106,7 +106,12 @@ public class CreateChatRoomActivity extends AppCompatActivity {
                             Log.d("TAG", "Data added successfully!");
                             Toast.makeText(CreateChatRoomActivity.this, "Chat Room Created", Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(CreateChatRoomActivity.this, ChatRoomActivity.class);
+                            intent.putExtra("ROOM_ID", roomID);
+                            intent.putExtra("USER", host);
                             startActivity(intent);
+
+                            roomIDtextView.setText("");
+                            roomPassTextView.setText("");
                         }
                     })
                     .addOnFailureListener(new OnFailureListener() {

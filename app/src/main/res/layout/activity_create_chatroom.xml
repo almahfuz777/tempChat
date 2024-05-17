@@ -50,7 +50,8 @@
             android:inputType="none"
             android:textColorHint="@color/hintColor"
             android:textColor="@color/hintColor"
-            android:clickable="false" />
+            android:clickable="false"
+            android:editable="false"/>
         <EditText
             android:id="@+id/roomPass"
             android:layout_width="match_parent"

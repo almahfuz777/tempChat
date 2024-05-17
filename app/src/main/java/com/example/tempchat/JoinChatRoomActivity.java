@@ -65,11 +65,17 @@ public class JoinChatRoomActivity extends AppCompatActivity {
                                 if(roomPass != null && roomPass.equals(passInput)){
                                     Toast.makeText(this, "connected", Toast.LENGTH_SHORT).show();
                                     Intent intent = new Intent(JoinChatRoomActivity.this, ChatRoomActivity.class );
+                                    intent.putExtra("ROOM_ID", roomID);
+                                    intent.putExtra("USER", guestName);
                                     startActivity(intent);
+
+                                    roomIDtextView.setText("");
+                                    roomPassTextView.setText("");
                                 }
                                 // invalid password
                                 else{
                                     Toast.makeText(this, "Invalid Pass", Toast.LENGTH_SHORT).show();
+                                    roomPassTextView.setText("");
                                 }
 
                             }

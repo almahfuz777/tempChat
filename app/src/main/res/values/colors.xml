@@ -5,7 +5,23 @@
     <color name="red">#FF0000</color>
     <color name="green">#006400</color>
     <color name="hintColor">#808080</color>
+    <color name="grey">#808080</color>
+    <color name="purple">#6750a4</color>
+
+    <color name="button_background">#00796B</color>
+    <color name="button_background_pressed">#FF6384</color>
 
 
+    <!---->
+<!--    <color name="background_color">#27374D</color>-->
+    <color name="card_background">#394867</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B0C4DE</color>
+    <color name="text_username">#FF4081</color>
+    <color name="edittext_background">#526D82</color>
+<!---->
 
+<!--    <color name="button_background_color">#4CAF50</color>-->
+<!--    -->
+    <color name="background_color">#f0f0f0</color>
 </resources>
